@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @Service
 @Transactional(readOnly = true)
-public class UserService {
+public class UserService implements UserServiceInterface{
     private final UserRepository userRepository;
 
     @Autowired
